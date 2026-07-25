@@ -9,14 +9,31 @@
 <body>
     <div class="container">
         <div class="logo">TimberHub ERP</div>
-        <div class="card" id="status-card">
-            <div class="icon success-icon">✓</div>
-            <h1>Verification Successful</h1>
-            <p>Your email address has been successfully verified.</p>
-            <div class="alert alert-info">
-                <strong>Next Step:</strong> You may now close this browser window and return to the TimberHub desktop application to sign in.
+        <div class="card" id="verify-card">
+            <div id="verify-loading">
+                <div class="icon">⏳</div>
+                <h1>Verifying...</h1>
+                <p>Please wait while we verify your email address.</p>
+            </div>
+            
+            <div id="verify-success" style="display: none;">
+                <div class="icon success-icon">✓</div>
+                <h1>Email verified successfully.</h1>
+                <div class="alert alert-success">
+                    <strong>Next Step:</strong> Close this browser window and return to TimberHub ERP to sign in.
+                </div>
+            </div>
+
+            <div id="verify-error" style="display: none;">
+                <div class="icon" style="color: var(--error-color);">❌</div>
+                <h1>Verification Failed</h1>
+                <p id="verify-error-msg">Verification link is invalid or expired.</p>
             </div>
         </div>
     </div>
+
+    <!-- Supabase JS Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
 </body>
 </html>
