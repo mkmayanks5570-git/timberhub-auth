@@ -139,5 +139,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                 submitBtn.textContent = 'Update Password';
             }
         });
+        // Handle show/hide password toggles
+        const toggleButtons = document.querySelectorAll('.toggle-password');
+        toggleButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                const input = document.getElementById(targetId);
+                if (input) {
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        btn.textContent = '🙈';
+                    } else {
+                        input.type = 'password';
+                        btn.textContent = '👁️';
+                    }
+                }
+            });
+        });
     }
 });
