@@ -7,8 +7,6 @@ This directory contains the static authentication portal for TimberHub ERP. It h
 Before deploying, you must configure your Supabase credentials.
 
 1. Open `script.js` in a text editor.
-2. Replace `YOUR_SUPABASE_URL` with your actual Supabase Project URL.
-3. Replace `YOUR_SUPABASE_ANON_KEY` with your actual Supabase `anon` public key.
 4. Save the file.
 
 ## 2. GitHub Upload & Pages Configuration
