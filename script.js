@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', async () => {
     // Replace these values with your actual Supabase project URL and anon key
     // You can find these in the Supabase Dashboard -> Settings -> API
-    const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-    const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+    const SUPABASE_URL = 'https://yxzdairbamirugrxgkmr.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_yOgCucOQjK8QirL88NGPBw_CADBBu4i';
 
     const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
